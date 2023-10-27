@@ -11,8 +11,8 @@ utime=$(sysctl kern.boottime | awk -F'sec = ' '{print $2}' | awk -F',' '{print $
 # Uptime in seconds
 utime=$(($currtime - $utime))
 
-# If boot is longer than 120 seconds ago... (To avoid bootloops)
-if [ $utime -gt 120 ]; then
+# If boot is longer than 180 seconds ago... (To avoid bootloops)
+if [ $utime -gt 180 ]; then
 
 # A message to the console (I dont like feedback on consle)
 # Uncomment it if you like to see a feedback on the consle
@@ -35,8 +35,8 @@ if [ $counting -eq 0 ]; then
 # Trying to just restart NIC.
 # Change the NIC name as per your wan.
 
-ifconfig re0 down
-ifconfig re0 up
+ifconfig igc0 down
+ifconfig igc0 up
 
 # Testing if the we get a ping or not.
 
