@@ -15,7 +15,7 @@ This guide is extremely beginner friendly. I wish I had it, When I was starting 
     ```
     4. Download the script file.
     ```
-    curl -LJO https://raw.githubusercontent.com/saswatasarkar13/PfSense-Auto-Reboot/main/PfReboot.sh
+    curl -LJO https://raw.githubusercontent.com/namnguyen51/PfSense-Auto-Reboot/main/PfReboot.sh
     ```
     5. Install nano file editor
     ```
